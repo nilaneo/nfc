@@ -143,6 +143,31 @@ h2 {
   height: 16px;
   background: url(../img/icon-go.png) no-repeat;
 }
+.icon-nfc {
+  width: 66px;
+  height: 78px;
+  background: url(../img/icon-nfc.png) no-repeat;
+}
+.icon-calc {
+  width: 80px;
+  height: 80px;
+  background: url(../img/icon-calc.png) no-repeat;
+}
+.icon-app {
+  width: 41px;
+  height: 80px;
+  background: url(../img/icon-app.png) no-repeat;
+}
+.icon-terminal {
+  width: 139px;
+  height: 81px;
+  background: url(../img/icon-terminal.png) no-repeat;
+}
+.icon-bag {
+  width: 69px;
+  height: 92px;
+  background: url(../img/icon-bag.png) no-repeat;
+}
 .btn {
   display: inline-block;
   *display: inline;
@@ -163,6 +188,52 @@ h2 {
   -webkit-box-shadow: 5px 5px 0 rgba(40, 19, 14, 0.2);
   -moz-box-shadow: 5px 5px 0 rgba(40, 19, 14, 0.2);
   box-shadow: 5px 5px 0 rgba(40, 19, 14, 0.2);
+}
+/* Block-steps
+========================================================================== */
+.block-steps {
+  padding: 30px 0 40px;
+  background-color: #d7d7d7;
+}
+.container-steps {
+  width: 1020px;
+  margin: 0 auto;
+}
+.container-steps h2 {
+  margin-bottom: 25px;
+  color: #28130e;
+  text-align: center;
+}
+.container-steps .list-steps {
+  padding-left: 0;
+}
+.container-steps .list-steps li {
+  float: left;
+  width: 170px;
+  padding: 0 15px 0 20px;
+  text-align: center;
+  list-style-type: none;
+}
+.container-steps .list-steps li p {
+  color: #28130e;
+  text-align: left;
+  font-size: 14px;
+}
+.container-steps .list-steps li:first-child {
+  padding-left: 0;
+}
+.container-steps .list-steps li:last-child {
+  padding-right: 0;
+}
+.container-steps .list-steps .separator {
+  width: 1px;
+  height: 134px;
+  padding: 0;
+  margin-top: 20px;
+  background-color: #28130e;
+}
+.container-steps .list-steps .icon {
+  margin-bottom: 20px;
 }
 /* Form
 ========================================================================== */

@@ -14,6 +14,7 @@ LESS
 @white: #fff;
 @black: #000;
 @yellow: #c99906;
+@brown: #28130e;
 
 
 .border-radius (@radius: 5px) {
@@ -218,6 +219,36 @@ h2 {
     background: url(../img/icon-go.png) no-repeat;
 }
 
+.icon-nfc {
+    width: 66px;
+    height: 78px;
+    background: url(../img/icon-nfc.png) no-repeat;
+}
+
+.icon-calc {
+    width: 80px;
+    height: 80px;
+    background: url(../img/icon-calc.png) no-repeat;
+}
+
+.icon-app {
+    width: 41px;
+    height: 80px;
+    background: url(../img/icon-app.png) no-repeat;
+}
+
+.icon-terminal {
+    width: 139px;
+    height: 81px;
+    background: url(../img/icon-terminal.png) no-repeat;
+}
+
+.icon-bag {
+    width: 69px;
+    height: 92px;
+    background: url(../img/icon-bag.png) no-repeat;
+}
+
 .btn {
     .inline-block;
     height: 44px;
@@ -235,6 +266,62 @@ h2 {
     margin-top: 15px;
     background-color: @yellow;
     .box-shadow(5px 5px 0 rgba(40, 19, 14, .2));
+}
+
+/* Block-steps
+========================================================================== */
+
+.block-steps {
+    padding: 30px 0 40px;
+    background-color: #d7d7d7;
+}
+
+.container-steps {
+    width: 1020px;
+    margin: 0 auto;
+
+    h2 {
+        margin-bottom: 25px;
+        color: @brown;
+        text-align: center;
+    }
+
+    .list-steps {
+        padding-left: 0;
+        li {
+            float: left;
+            width: 170px;
+            padding: 0 15px 0 20px;
+            text-align: center;
+            list-style-type: none;
+
+            p {
+                color: @brown;
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+
+        li:first-child {
+            padding-left: 0;
+        }
+
+        li:last-child {
+            padding-right: 0;
+        }
+
+        .separator {
+            width: 1px;
+            height: 134px;
+            padding: 0;
+            margin-top: 20px;
+            background-color: #28130e;
+        }
+
+        .icon {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 /* Form

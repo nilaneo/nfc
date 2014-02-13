@@ -31,6 +31,9 @@ button:active,
 :focus {
   outline: none;
 }
+a:focus {
+  outline: none;
+}
 .left {
   float: left;
 }
@@ -56,7 +59,7 @@ button:active,
 }
 h2 {
   margin: 0;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: normal;
   font-family: "HattoriHanzo", Tahoma, Arial, sans-serif;
   text-transform: uppercase;
@@ -188,6 +191,14 @@ h2 {
   -webkit-box-shadow: 5px 5px 0 rgba(40, 19, 14, 0.2);
   -moz-box-shadow: 5px 5px 0 rgba(40, 19, 14, 0.2);
   box-shadow: 5px 5px 0 rgba(40, 19, 14, 0.2);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-preorder:hover {
+  background-color: #f8bd0a;
 }
 /* Block-steps
 ========================================================================== */
@@ -237,3 +248,65 @@ h2 {
 }
 /* Form
 ========================================================================== */
+.block-preorder {
+  position: relative;
+  height: 450px;
+  padding-top: 40px;
+  background-color: #120807;
+  background-image: url(../img/branches.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.block-preorder h3 {
+  margin-bottom: 30px;
+  color: #c99906;
+  font-size: 26px;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.form-preorder {
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+.inp-primary {
+  width: 324px;
+  height: 20px;
+  padding: 5px 15px;
+  margin: 25px 6px 0;
+  border: 2px solid #493407;
+  background-color: #25110c;
+}
+.inp-primary,
+.checkbox {
+  float: left;
+  color: #cdcbb5;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+.checkbox {
+  height: 16px;
+  padding-left: 28px;
+  margin: 35px 7px 8px;
+  line-height: 16px;
+  background-image: url(../img/checkbox.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  text-decoration: none;
+}
+.checkbox.checked {
+  background-position: 0 -17px;
+}
+.btn-send {
+  margin-top: 40px;
+  background-color: #9b7506;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-send:hover {
+  background-color: #cc9a08;
+}

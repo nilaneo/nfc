@@ -15,6 +15,7 @@ LESS
 @black: #000;
 @yellow: #c99906;
 @brown: #28130e;
+@nude: #cdcbb5;
 
 
 .border-radius (@radius: 5px) {
@@ -90,6 +91,10 @@ button:active,
     outline: none;
 }
 
+a:focus {
+    outline: none;
+}
+
 .left {
     float: left;
 }
@@ -119,7 +124,7 @@ button:active,
 
 h2 {
     margin: 0;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: normal; 
     font-family: "HattoriHanzo", Tahoma, Arial, sans-serif;
     text-transform: uppercase;
@@ -151,7 +156,7 @@ h2 {
     h2 {
         width: 800px;
         margin-bottom: 20px;
-        color: #cdcbb5;
+        color: @nude;
     }
 
     img {
@@ -195,7 +200,7 @@ h2 {
     p {
         margin: 0;
         margin-bottom: 5px;
-        color: #cdcbb5;
+        color: @nude;
         font-size: 15px;
     }
 
@@ -262,10 +267,16 @@ h2 {
     text-decoration: none;
 }
 
+
 .btn-preorder {
     margin-top: 15px;
     background-color: @yellow;
     .box-shadow(5px 5px 0 rgba(40, 19, 14, .2));
+    .transition(all .3s);
+}
+
+.btn-preorder:hover {
+    background-color: lighten(@yellow, 10%)
 }
 
 /* Block-steps
@@ -327,3 +338,70 @@ h2 {
 /* Form
 ========================================================================== */
 
+.block-preorder {
+    position: relative;
+    height: 450px;
+    padding-top: 40px;
+    background-color: #120807;
+    background-image: url(../img/branches.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    h3 {
+        margin-bottom: 30px;
+        color: @yellow;
+        font-size: 26px;
+        font-weight: normal;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+}
+
+.form-preorder {
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inp-primary {
+    width: 324px;
+    height: 20px;
+    padding: 5px 15px;
+    margin: 25px 6px 0;
+    border: 2px solid #493407;
+    background-color: #25110c;
+    
+}
+
+.inp-primary,
+.checkbox {
+    float: left;
+    color: @nude;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.checkbox {
+    height: 16px;
+    padding-left: 28px;
+    margin: 35px 7px 8px;
+    line-height: 16px;
+    background-image: url(../img/checkbox.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-decoration: none;
+}
+
+.checkbox.checked {
+    background-position: 0 -17px;
+}
+
+.btn-send {
+    margin-top: 40px;
+    background-color: #9b7506;
+    .transition(all .3s);
+}
+
+.btn-send:hover {
+    background-color: lighten(#9b7506, 10%)
+}

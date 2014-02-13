@@ -12,8 +12,12 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <!--[if  IE ]><!-->
+             <link rel="stylesheet" href="css/ie-fix.css"> 
+        <!--<![endif]-->   
+
     </head>
-    <body>        
+    <body>  
         <div class="slider">
             <div class="container-slider">
                 <a href="#" class="logo-main"></a>              
@@ -73,13 +77,14 @@
             </div><!-- end of container-steps -->   
         </div><!-- end of block-steps --> 
         <div class="block-preorder">
-            <form action="">
+            <h3>Предзаказ</h3>
+            <form action="" class="form-preorder">
                 <input type="text" class="inp-primary">
                 <input type="text" class="inp-primary">
                 <input type="text" class="inp-primary">
                 <input type="text" class="inp-primary">
                 <input type="text" class="inp-primary">
-                <a href="#0">я являюсь клиентом Альфа-Банка</a>
+                <a href="#0" class="checkbox">я являюсь клиентом Альфа-Банка</a>
                 <button class="btn btn-send">Отправить заявку</button>
             </form>
         </div><!-- end of block-preorder -->  

@@ -48,6 +48,7 @@ a:focus {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
+
 }
 .clearfix:after {
   clear: both;
@@ -74,6 +75,10 @@ h2 {
   position: relative;
   width: 100%;
   height: 660px;
+  overflow: hidden;
+  background-image: url(../img/bg-scheme.png);
+  background-size: cover;
+  background-position: center;
 }
 .container-slider {
   position: relative;
@@ -98,21 +103,51 @@ h2 {
   height: 100%;
   background-size: cover;
   background-position: center;
+  z-index: 2;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .slide-1 {
   background-image: url(../img/bg-scheme.png);
-  z-index: 1;
 }
 .slide-2 {
   background-image: url(../img/bg-2.jpg);
-  z-index: 2;
 }
 .slide-3 {
   background-image: url(../img/bg-3.jpg);
-  z-index: 3;
 }
 .slide-3 .block-info {
   top: 274px;
+}
+.is-minified {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.is-maximized {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  z-index: 1;
 }
 .logo-main {
   display: block;

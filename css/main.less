@@ -139,11 +139,9 @@ h2 {
 ========================================================================== */
 
 .slider {
+    position: relative;
     width: 100%;
     height: 660px;
-    background-image: url(../img/bg-scheme.png);
-    background-size: cover;
-    background-position: center;    
 }
 
 .container-slider {
@@ -161,6 +159,35 @@ h2 {
 
     img {
         margin-left: 70px;
+    }
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;    
+}
+
+.slide-1 {
+    background-image: url(../img/bg-scheme.png);
+    z-index: 1;
+}
+
+.slide-2 {
+    background-image: url(../img/bg-2.jpg);
+    z-index: 2;
+}
+
+.slide-3 {
+    background-image: url(../img/bg-3.jpg);
+    z-index: 3;
+
+    .block-info {
+        top: 274px;
     }
 }
 
@@ -187,7 +214,7 @@ h2 {
     }
 
     h4 {
-        width: 230px;
+        width: 250px;
         margin: 0;
         margin: 15px 0;
         color: @white;
@@ -197,20 +224,48 @@ h2 {
         text-transform: uppercase;
     }
 
-    p {
+    p,
+    li {
         margin: 0;
         margin-bottom: 5px;
         color: @nude;
         font-size: 15px;
     }
 
+    ul {
+        padding-left: 0;
+        list-style-type: none; 
+
+        li {
+            margin-bottom: 0;
+            .btn-next {
+                margin-left: 10px;
+            }
+        }      
+
+        span {
+            margin-right: 10px;
+            color: @yellow;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    }
+
     .btn-next {
+        .inline-block;
         color: @yellow;
-        display: block;
         font-size: 22px;
         font-family: "HattoriHanzo", Tahoma, Arial, sans-serif;
         text-transform: uppercase;
         text-decoration: none;
+    }
+}
+
+.block-info-3 {
+    h4 {
+        width: 398px;
     }
 }
 
@@ -267,7 +322,6 @@ h2 {
     text-decoration: none;
 }
 
-
 .btn-preorder {
     margin-top: 15px;
     background-color: @yellow;
@@ -277,6 +331,15 @@ h2 {
 
 .btn-preorder:hover {
     background-color: lighten(@yellow, 10%)
+}
+
+.btn-gplay {
+    .inline-block;
+    width: 131px;
+    height: 32px;
+    margin-right: 15px;
+    background: url(../img/google-play.png) no-repeat;
+    vertical-align: middle;
 }
 
 /* Block-steps

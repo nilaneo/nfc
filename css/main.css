@@ -71,11 +71,9 @@ h2 {
 /* Slider
 ========================================================================== */
 .slider {
+  position: relative;
   width: 100%;
   height: 660px;
-  background-image: url(../img/bg-scheme.png);
-  background-size: cover;
-  background-position: center;
 }
 .container-slider {
   position: relative;
@@ -91,6 +89,30 @@ h2 {
 }
 .container-slider img {
   margin-left: 70px;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.slide-1 {
+  background-image: url(../img/bg-scheme.png);
+  z-index: 1;
+}
+.slide-2 {
+  background-image: url(../img/bg-2.jpg);
+  z-index: 2;
+}
+.slide-3 {
+  background-image: url(../img/bg-3.jpg);
+  z-index: 3;
+}
+.slide-3 .block-info {
+  top: 274px;
 }
 .logo-main {
   display: block;
@@ -113,7 +135,7 @@ h2 {
   font-weight: normal;
 }
 .block-info h4 {
-  width: 230px;
+  width: 250px;
   margin: 0;
   margin: 15px 0;
   color: #ffffff;
@@ -122,19 +144,43 @@ h2 {
   font-family: "HattoriHanzo", Tahoma, Arial, sans-serif;
   text-transform: uppercase;
 }
-.block-info p {
+.block-info p,
+.block-info li {
   margin: 0;
   margin-bottom: 5px;
   color: #cdcbb5;
   font-size: 15px;
 }
-.block-info .btn-next {
+.block-info ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.block-info ul li {
+  margin-bottom: 0;
+}
+.block-info ul li .btn-next {
+  margin-left: 10px;
+}
+.block-info ul span {
+  margin-right: 10px;
   color: #c99906;
-  display: block;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.block-info .btn-next {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  color: #c99906;
   font-size: 22px;
   font-family: "HattoriHanzo", Tahoma, Arial, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+}
+.block-info-3 h4 {
+  width: 398px;
 }
 .icon {
   display: inline-block;
@@ -199,6 +245,16 @@ h2 {
 }
 .btn-preorder:hover {
   background-color: #f8bd0a;
+}
+.btn-gplay {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 131px;
+  height: 32px;
+  margin-right: 15px;
+  background: url(../img/google-play.png) no-repeat;
+  vertical-align: middle;
 }
 /* Block-steps
 ========================================================================== */

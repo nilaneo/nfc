@@ -7,6 +7,7 @@ $(function() {
 	/*
 	* SIMPLE PLACEHOLDERS
 	*/
+
 	$("input[type=text]").focus(function(){
 		var t = $(this)
 		if( t.val()==t.attr('def') ) t.val('')
@@ -16,4 +17,13 @@ $(function() {
 		var t = $(this)
 		if( t.val().length==0 ) t.val( t.attr('def') )
 	});
+
+	/*
+	* SIMPLE PLACEHOLDERS
+	*/
+
+	$(".btn-next").on("click", function() {
+		
+	});
+
 });

@@ -201,7 +201,7 @@ h2 {
   font-weight: bold;
   vertical-align: middle;
 }
-.block-info .btn-next {
+.btn-next {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -210,6 +210,12 @@ h2 {
   font-family: "HattoriHanzo", Tahoma, Arial, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+}
+.btn-next:hover {
+  color: #ffffff;
+}
+.btn-next:hover .icon-go {
+  background: url(../img/icon-go-hover.png) no-repeat;
 }
 .block-info-3 h4 {
   width: 398px;

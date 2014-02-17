@@ -134,18 +134,37 @@
         </div><!-- end of block-steps -->
         <div class="block-preorder">
             <h3>Предзаказ</h3>
-            <form action="" class="form-preorder">
-                <input type="text" class="inp-primary" def="Имя" value="Имя">
-                <input type="text" class="inp-primary" def="Фамилия" value="Фамилия">
-                <input type="text" class="inp-primary" def="E-mail" value="E-mail">
-                <input type="text" class="inp-primary" def="Телефон" value="Телефон">
-                <input type="text" class="inp-primary" def="Модель телефона" value="Модель телефона">
-                <a href="#0" class="checkbox">я являюсь клиентом Альфа-Банка</a>
-                <button class="btn btn-send">Отправить заявку</button>
-            </form>
+            <div class="form-preorder">
+                <form method="post" id="order-form" class="form-preorder">
+                    <input type="hidden" name="token" id="token" value="99185031e16a6838bdf4f7b430299f86">
+                    <input type="text" class="inp-primary" def="Имя" value="Имя" id="first_name" name="first_name">
+                    <input type="text" class="inp-primary" def="Фамилия" value="Фамилия" id="second_name" name="second_name">
+                    <input type="text" class="inp-primary" def="E-mail" value="E-mail" id="email" name="email">
+                    <input type="text" class="inp-primary" def="Телефон" value="Телефон" id="phone_number" name="phone_number">
+                    <div class="select-box select-model">
+                        <select name="phone_model" id="phone_model">
+                            <option selected value="Модель телефона">Модель телефона</option>
+                            <option value="Google Nexus S">Google Nexus S</option>
+                            <option value="Sony Xperia S">Sony Xperia S</option>
+                            <option value="Nokia 239478">Nokia 239478</option>
+                            <option value="Samsung Galaxy s4">Samsung Galaxy s4</option>
+                        </select>
+                    </div>
+                    <a href="#0" class="checkbox" id="is_client">я являюсь клиентом Альфа-Банка</a>
+                </form>
+                <button type="submit" class="btn btn-send" id="send">Отправить заявку</button>
+            </div>
         </div><!-- end of block-preorder -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/messages_ru.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jquery.selectify.js"></script>
+        <script>
+            $(function(){
+                $("select").selectify();
+            });
+        </script>
     </body>
 </html>

@@ -48,7 +48,6 @@ a:focus {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
-
 }
 .clearfix:after {
   clear: both;
@@ -76,9 +75,7 @@ h2 {
   width: 100%;
   height: 660px;
   overflow: hidden;
-  background-image: url(../img/bg-scheme.png);
-  background-size: cover;
-  background-position: center;
+  background-color: #050202;
 }
 .container-slider {
   position: relative;
@@ -216,6 +213,9 @@ h2 {
 }
 .block-info-3 h4 {
   width: 398px;
+}
+.block-info-3 .icon-go {
+  vertical-align: inherit;
 }
 .icon {
   display: inline-block;
